@@ -1,0 +1,5 @@
+Ilość pokoleń: 20
+Rozmiar drzewa: 178
+Głębokość drzewa: 11
+Poprawność klasyfikacji dla danych uczących: 0.456185567010309
+Dokładność klasyfikatora dla danych testowych: 0.9273531269741

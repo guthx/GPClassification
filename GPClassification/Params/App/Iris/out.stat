@@ -1,0 +1,172 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=134 Adjusted=0.007407407 Hits=0
+Tree 0:
+ (< P10 0.65764386561095)
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=134 Adjusted=0.007407407 Hits=0
+Tree 0:
+ (< P10 0.440841736722107)
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=134 Adjusted=0.007407407 Hits=0
+Tree 0:
+ (< P10 0.764574691978098)
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=134 Adjusted=0.007407407 Hits=0
+Tree 0:
+ (< P10 0.858540021990764)
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=134 Adjusted=0.007407407 Hits=0
+Tree 0:
+ (< P10 0.789745279411918)
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=134 Adjusted=0.007407407 Hits=0
+Tree 0:
+ (< P10 0.386515912076168)
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=134 Adjusted=0.007407407 Hits=0
+Tree 0:
+ (< P10 0.00950577297301547)
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=134 Adjusted=0.007407407 Hits=0
+Tree 0:
+ (< P10 0.0812751961037701)
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=134 Adjusted=0.007407407 Hits=0
+Tree 0:
+ (< P10 0.360399839307271)
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=134 Adjusted=0.007407407 Hits=0
+Tree 0:
+ (< P10 0.199183232790366)
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=126 Adjusted=0.007874016 Hits=0
+Tree 0:
+ (AND (> P1 0.208742520799038) (AND (< P4
+     0.831050572600969) (< P10 0.245059253821344)))
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=118 Adjusted=0.008403362 Hits=0
+Tree 0:
+ (AND (> P1 0.208742520799038) (< P10 0.694554288287182))
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=118 Adjusted=0.008403362 Hits=0
+Tree 0:
+ (AND (> P1 0.208742520799038) (< P10 0.927951007021016))
+
+Generation: 13
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=118 Adjusted=0.008403362 Hits=0
+Tree 0:
+ (AND (> P1 0.208742520799038) (< P10 0.0812751961037701))
+
+Generation: 14
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=80 Adjusted=0.01234568 Hits=0
+Tree 0:
+ (AND (NOT (< P2 0.127558766846369)) (< P10
+     0.694554288287182))
+
+Generation: 15
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=70 Adjusted=0.01408451 Hits=0
+Tree 0:
+ (AND (> P2 0.208742520799038) (< P10 0.906712922110002))
+
+Generation: 16
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=70 Adjusted=0.01408451 Hits=0
+Tree 0:
+ (AND (> P2 0.208742520799038) (< P10 0.429255525365332))
+
+Generation: 17
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=64 Adjusted=0.01538462 Hits=0
+Tree 0:
+ (AND (NOT (< P2 0.127558766846369)) (AND
+     (< P8 0.0955451276472734) (< P2 0.46500955204091)))
+
+Generation: 18
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=54 Adjusted=0.01818182 Hits=0
+Tree 0:
+ (AND (> P2 0.208742520799038) (AND (< P8
+     0.0955451276472734) (< P2 0.46500955204091)))
+
+Generation: 19
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=54 Adjusted=0.01818182 Hits=0
+Tree 0:
+ (AND (> P2 0.208742520799038) (AND (< P8
+     0.0955451276472734) (< P2 0.46500955204091)))
+
+Best Individual of Run:
+Evaluated: true
+Fitness: Standardized=54 Adjusted=0.01818182 Hits=0
+Tree 0:
+ (AND (> P2 0.208742520799038) (AND (< P8
+     0.0955451276472734) (< P2 0.46500955204091)))

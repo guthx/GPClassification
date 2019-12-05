@@ -1,0 +1,525 @@
+
+Generation: 0
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=6900 Adjusted=0.0001449065 Hits=0
+Tree 0:
+ (IF (< P10 8) (IF (< P6 212) (IF (< P2 65)
+     (IF (> P4 14) (IF False reka l5) (IF True
+         kciuk l5)) (IF (OR True True) (IF False kciuk
+     l5) (IF True reka reka))) (IF (AND (NOT False)
+     (AND True True)) (IF (< P8 14) (IF True l2
+     l3) (IF False l4 l1)) (IF (> P8 0) (IF False
+     l4 l3) (IF False l4 l1)))) (IF (< P0 3) (IF
+     (> P4 10) (IF (AND True False) (IF False
+     l3 piesc) (IF False l1 kciuk)) (IF (OR False
+     False) (IF True l5 kciuk) (IF True l4 piesc)))
+     (IF (< P8 10) (IF (> P0 0) (IF False l5 reka)
+         (IF False piesc piesc)) (IF (NOT True) (IF
+         False l4 l5) (IF False l2 piesc)))))
+
+Generation: 1
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=6732 Adjusted=0.0001485222 Hits=0
+Tree 0:
+ (IF (< P10 8) (IF (< P6 212) (IF (< P2 65)
+     (IF (> P4 14) (IF False reka l5) (IF True
+         kciuk l5)) (IF (OR True True) (IF False kciuk
+     l5) (IF True reka reka))) (IF (AND (NOT False)
+     (AND True True)) (IF (< P8 14) (IF True l2
+     l3) (IF False l4 l1)) (IF (> P8 0) (IF False
+     l4 l3) (IF False l4 l1)))) (IF (< P0 3) (IF
+     (> P4 10) (IF (AND True False) (IF False
+     l3 piesc) (IF False l1 kciuk)) (IF True l2
+     piesc)) (IF (< P8 10) (IF (> P0 0) (IF False
+     l5 reka) (IF False piesc piesc)) (IF (NOT
+     True) (IF False l4 l5) (IF False l2 piesc)))))
+
+Generation: 2
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=6406 Adjusted=0.0001560793 Hits=0
+Tree 0:
+ (IF (OR (< P6 12) (NOT (OR (NOT False) (NOT
+     True)))) (IF (OR (AND (> P0 14) (AND False
+     False)) (> P9 129)) (IF (AND (AND False False)
+     (> P4 0)) (IF (> P6 0) (IF False reka piesc)
+     (IF False kciuk l2)) (IF (NOT False) (IF
+     False l3 reka) (IF True l1 l1))) (IF (< P9
+     55) piesc (IF (< P2 0) (IF True l2 kciuk)
+     (IF True l4 kciuk)))) (IF (< P7 10) (IF (<
+     P2 98) l5 (IF (AND True False) l5 (IF True
+     l3 piesc))) (IF (< P4 4) (IF (NOT False)
+     (IF True l2 l4) (IF False l3 l1)) (IF (NOT
+     False) (IF True reka l4) (IF False l3 l2)))))
+
+Generation: 3
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=4786 Adjusted=0.0002088991 Hits=0
+Tree 0:
+ (IF (< P10 8) (IF (< P6 212) (IF (< P2 65)
+     (IF (> P4 14) (IF False reka l5) (IF True
+         kciuk l5)) (IF (OR True True) (IF False kciuk
+     l5) (IF True reka reka))) (IF (AND (NOT False)
+     (AND True True)) (IF (< P8 14) (IF True l2
+     l3) (IF False l4 l1)) (IF (> P8 0) (IF False
+     l3 l5) (IF False l4 l1)))) (IF (< P0 3) (IF
+     (> P4 10) (IF (AND True False) (IF False
+     l3 piesc) (IF False l1 kciuk)) (IF (> P8
+     9) (IF (OR (OR (< P6 162) (< P4 8)) (AND
+     (AND True True) (OR True False))) (IF (AND
+     (> P7 10) (OR False True)) (IF (> P4 7) (IF
+     True l4 kciuk) (IF False piesc l2)) (IF (AND
+     False False) (IF True l1 reka) (IF True l3
+     piesc))) (IF (NOT (OR True False)) (IF (NOT
+     True) (IF True l4 l4) (IF False reka reka))
+     (IF (< P8 0) (IF True reka l5) (IF False
+         l4 kciuk)))) (IF (OR (AND (> P1 36) (> P7
+     2)) (< P1 34)) (IF (OR (OR False False) (<
+     P5 34)) (IF (AND True False) (IF False l2
+     reka) (IF True l3 reka)) (IF (OR True True)
+     (IF True l4 l4) (IF False piesc kciuk)))
+     (IF (NOT (OR True False)) (IF (NOT True)
+         (IF True l5 l2) (IF False reka kciuk)) (IF
+         (NOT True) (IF True l1 piesc) (IF False l2
+         l2)))))) (IF (< P8 10) (IF (> P0 0) (IF False
+     l5 reka) (IF False piesc piesc)) (IF (NOT
+     True) (IF False l4 l5) (IF False l2 piesc)))))
+
+Generation: 4
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=4772 Adjusted=0.0002095118 Hits=0
+Tree 0:
+ (IF (< P10 8) (IF (< P6 212) (IF (< P2 65)
+     (IF (> P4 14) (IF False reka l5) (IF True
+         kciuk l5)) (IF (OR True True) (IF False kciuk
+     l5) (IF True reka reka))) (IF (AND (NOT False)
+     (AND True True)) (IF (< P8 14) (IF True l2
+     l3) (IF False l4 l1)) (IF (> P8 0) (IF False
+     l3 l5) (IF False l4 l1)))) (IF (< P0 3) (IF
+     (> P4 10) (IF (AND True False) (IF False
+     l3 piesc) (IF False l1 kciuk)) (IF (> P8
+     9) (IF (OR (OR (< P6 162) (< P4 8)) (AND
+     (AND True True) (OR True False))) (IF (AND
+     (> P7 10) (OR False True)) (IF (> P4 7) (IF
+     True l4 kciuk) (IF False piesc l2)) (IF (AND
+     False False) (IF True l1 reka) (IF True l3
+     piesc))) (IF (NOT (OR True False)) (IF (NOT
+     True) (IF True l4 l4) (IF False reka reka))
+     (IF (< P8 0) (IF True reka l5) (IF False
+         l4 kciuk)))) (IF (OR (AND (> P1 36) (> P7
+     2)) (< P1 34)) (IF (OR (OR False False) (<
+     P5 34)) (IF (AND True False) (IF False l2
+     reka) (IF True l3 reka)) (IF (OR True True)
+     (IF True l4 l4) (IF False piesc kciuk)))
+     (IF (NOT (OR True False)) (IF (NOT True)
+         (IF True l5 l2) (IF False reka kciuk)) (IF
+         True reka reka))))) (IF (< P8 10) (IF (>
+     P0 0) (IF False l5 reka) (IF False piesc
+     piesc)) (IF (NOT True) (IF False l4 l5) (IF
+     False l2 piesc)))))
+
+Generation: 5
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=4772 Adjusted=0.0002095118 Hits=0
+Tree 0:
+ (IF (< P10 8) (IF (< P6 212) (IF (< P2 65)
+     (IF (> P4 14) (IF False reka l5) (IF True
+         kciuk l5)) (IF (OR True True) (IF False kciuk
+     l5) (IF True reka reka))) (IF (AND (NOT False)
+     (AND True True)) (IF (< P8 14) (IF True l2
+     l3) (IF False l4 l1)) (IF (> P8 0) (IF False
+     l3 l5) (IF False l4 l1)))) (IF (< P0 3) (IF
+     (> P4 10) (IF (AND True False) (IF False
+     l3 piesc) (IF False l1 kciuk)) (IF (> P8
+     9) (IF (OR (OR (< P6 162) (< P4 8)) (AND
+     (AND True True) (OR True False))) (IF (AND
+     (> P7 10) (OR False True)) (IF (> P4 7) (IF
+     True l4 kciuk) (IF False piesc l2)) (IF (AND
+     False False) (IF True l1 reka) (IF True l3
+     piesc))) (IF (NOT (OR True False)) (IF (NOT
+     True) (IF True l4 l4) (IF False reka reka))
+     (IF (< P8 0) (IF True reka l5) (IF False
+         l4 kciuk)))) (IF (OR (AND (> P1 36) (> P7
+     2)) (< P1 34)) (IF (OR (OR False False) (<
+     P5 34)) (IF (AND True False) (IF False kciuk
+     l5) (IF True l3 reka)) (IF (OR True True)
+     (IF True l4 l4) (IF False piesc kciuk)))
+     (IF (NOT (OR True False)) (IF (NOT True)
+         (IF True l5 l2) (IF False reka kciuk)) (IF
+         True reka reka))))) (IF (< P8 10) (IF (>
+     P0 0) (IF False l5 reka) (IF False piesc
+     piesc)) (IF (NOT True) (IF False l4 l5) (IF
+     False l2 piesc)))))
+
+Generation: 6
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=4174 Adjusted=0.000239521 Hits=0
+Tree 0:
+ (IF (> P0 3) (IF (> P4 13) (IF True piesc
+     l3) (IF True l5 kciuk)) (IF (> P9 207) (IF
+     True l4 kciuk) (IF (< P10 7) (IF (> P3 39)
+     (IF (< P9 200) (IF True l2 l3) (IF True l2
+         kciuk)) (IF (> P3 13) (IF False kciuk l1)
+     (IF False l5 reka))) (IF (AND (> P7 2) (NOT
+     False)) (IF (> P6 141) (IF True l2 l2) (IF
+     (< P10 10) l5 (IF (OR (> P5 6) False) l2
+     l1))) (IF (OR (OR (NOT True) (> P4 13)) (<
+     P6 9)) (IF (< P0 5) (IF False l1 kciuk) (IF
+     True piesc l2)) (IF (> P3 14) (IF (< P8 4)
+     (IF True l4 piesc) (IF False l5 l3)) (IF
+     (AND True False) (IF False l2 l1) (IF False
+     l5 kciuk))))))))
+
+Generation: 7
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=3434 Adjusted=0.0002911208 Hits=0
+Tree 0:
+ (IF (OR (OR (NOT True) False) (< P6 9)) (IF
+     (< P0 5) (IF False l1 kciuk) (IF True piesc
+     l2)) (IF (> P3 14) (IF (< P9 26) (IF (OR
+     False True) (IF (> P7 11) (IF (> P4 2) reka
+     l2) (IF (OR (AND (OR True True) (NOT (> P8
+     7))) (> P10 11)) l3 l4)) (IF True l2 reka))
+     (IF (> P2 49) (IF (OR (> P6 159) (< P0 13))
+         (IF (< P10 2) (IF False l4 l5) (IF False
+             reka l4)) (IF (NOT False) (IF False piesc
+         l2) (IF True l4 l5))) (IF True l4 l5))) (IF
+     (AND True False) (IF False l2 l1) (IF (<
+     P4 15) (IF (< P5 58) (IF True l2 kciuk) (IF
+     False reka reka)) (IF (< P3 41) (IF False
+     l2 l3) (IF True l1 piesc))))))
+
+Generation: 8
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=3370 Adjusted=0.0002966479 Hits=0
+Tree 0:
+ (IF (OR (OR (NOT True) False) (< P6 9)) (IF
+     (< P0 5) (IF False l1 kciuk) (IF True piesc
+     l2)) (IF (> P3 14) (IF (< P9 26) (IF (OR
+     False True) (IF (> P7 11) (IF (> P4 2) reka
+     l2) (IF (OR (AND (OR True True) (NOT (> P8
+     7))) (> P10 11)) l3 l4)) (IF True l2 reka))
+     (IF (> P2 49) (IF (OR (> P6 159) (< P0 13))
+         (IF (< P10 2) (IF False l4 l5) (IF False
+             reka l4)) (IF (NOT False) (IF False piesc
+         l2) (IF True l4 l5))) (IF True l4 l5))) (IF
+     True piesc reka)))
+
+Generation: 9
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=3370 Adjusted=0.0002966479 Hits=0
+Tree 0:
+ (IF (OR (OR (NOT True) False) (< P6 9)) (IF
+     (< P0 5) (IF False l1 kciuk) (IF True piesc
+     l2)) (IF (> P3 14) (IF (< P9 26) (IF (OR
+     False True) (IF (> P7 11) (IF (> P4 2) reka
+     l2) (IF (OR (AND (OR True True) (NOT (> P8
+     7))) (> P10 11)) l3 l4)) (IF True l2 reka))
+     (IF (> P2 49) (IF (OR (> P6 159) (< P0 13))
+         (IF (< P10 2) (IF False l4 l5) (IF False
+             reka l4)) (IF (NOT False) (IF False piesc
+         l2) (IF True l4 l5))) (IF True l4 l5))) (IF
+     True piesc reka)))
+
+Generation: 10
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=3132 Adjusted=0.0003191829 Hits=0
+Tree 0:
+ (IF (> P0 3) (IF (> P4 13) (IF (< P0 3) (IF
+     (> P4 10) (IF (AND True False) (IF True reka
+     reka) (IF False l1 kciuk)) (IF (> P8 9) (IF
+     (OR (OR (< P6 162) (< P4 8)) (AND (AND True
+         True) (OR True False))) (IF (AND (> P7 10)
+     (OR False True)) (IF (> P4 7) (IF True l4
+     kciuk) (IF False piesc l2)) (IF (AND False
+     False) (IF True l1 reka) (IF True l3 piesc)))
+     (IF (NOT (OR True False)) (IF (NOT True)
+         (IF True l4 l4) (IF False reka reka)) (IF
+         (< P8 0) (IF True reka l5) (IF False l4 kciuk))))
+     (IF (OR (AND (> P1 36) (> P7 2)) (< P1 34))
+         (IF False piesc piesc) (IF (NOT (OR True
+         False)) (IF (NOT True) (IF True l5 l2) (IF
+         False reka kciuk)) (IF (NOT True) (IF True
+         l1 piesc) (IF False l2 l2)))))) (IF (< P8
+     10) (IF (> P0 0) (IF False l5 reka) (IF False
+     piesc piesc)) (IF (> P0 10) (IF False l4
+     piesc) (IF False l1 reka)))) (IF True l5
+     kciuk)) (IF (> P9 207) (IF True l4 kciuk)
+     (IF (< P10 7) (IF (> P3 39) (IF (< P9 200)
+         (IF True l2 l3) (IF True l2 kciuk)) (IF (>
+         P3 13) (IF False kciuk l1) (IF False l5 reka)))
+         (IF (AND (> P7 2) (NOT False)) (IF (> P6
+             141) (IF True l2 l2) (IF (< P10 10) l5 (IF
+             (OR (> P5 6) False) l2 l1))) (IF (OR (OR
+             (NOT True) (> P4 13)) (< P6 9)) (IF (< P0
+             5) (IF False l1 kciuk) (IF True piesc l2))
+             (IF (> P3 14) (IF (< P8 4) (IF True l4 piesc)
+                 (IF False l5 l3)) (IF (AND True False) (IF
+                 False l2 l1) (IF False l5 kciuk))))))))
+
+Generation: 11
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2628 Adjusted=0.0003803728 Hits=0
+Tree 0:
+ (IF (< P10 8) (IF (< P6 212) (IF (< P2 65)
+     (IF (> P4 14) (IF False reka l5) (IF True
+         kciuk l5)) (IF (OR True True) (IF False kciuk
+     l5) (IF True reka reka))) (IF (AND (NOT False)
+     (AND True True)) (IF (< P8 14) (IF True l2
+     l3) (IF False l4 l1)) (IF (> P8 0) (IF False
+     l3 l5) (IF False l4 l1)))) (IF (< P0 3) (IF
+     (> P4 10) (IF (AND True False) (IF True reka
+     reka) (IF False l1 kciuk)) (IF (< P9 26)
+     (IF (OR False True) (IF (> P7 11) (IF (>
+         P4 2) reka l2) (IF (OR (AND (OR True True)
+         (NOT (> P8 7))) (> P10 11)) l3 l4)) (IF True
+         l2 reka)) (IF (> P2 49) (IF (OR (> P6 159)
+     (< P0 13)) (IF (< P10 2) (IF False l4 l5)
+     (IF False (IF (> P0 0) (IF False l5 reka)
+         (IF False piesc piesc)) l4)) (IF (NOT False)
+     (IF False piesc l2) (IF True l4 l5))) (IF
+     True l4 l5)))) (IF (< P8 10) (IF (> P0 0)
+     (IF False l5 reka) (IF False piesc piesc))
+     (IF (> P0 10) (IF False l4 piesc) (IF False
+         l1 reka)))))
+
+Generation: 12
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2534 Adjusted=0.0003944773 Hits=0
+Tree 0:
+ (IF (> P6 68) (IF (< P8 7) (IF (NOT (NOT
+     False)) (IF (> P2 0) (IF False l3 l1) (IF
+     True l5 l5)) (IF (< P10 3) (IF False kciuk
+     l5) (IF True l4 kciuk))) (IF (> P7 15) (IF
+     (< P5 80) (IF False l4 l2) (IF False l4 piesc))
+     (IF (AND False False) (IF True l1 reka) (IF
+         (OR False True) l3 piesc)))) (IF (OR (NOT
+     (> P4 14)) (< P9 241)) (IF (AND (> P4 6)
+     (> P10 7)) (IF (> P0 9) (IF (> P9 110) l3
+     (IF (> P0 10) piesc (IF (< P0 8) (IF (NOT
+         (> P9 29)) (IF (NOT False) (IF (< P5 8) (IF
+         (OR True True) (IF True l1 reka) (IF (NOT
+         (OR True False)) (IF (NOT True) (IF True
+         l5 l2) (IF False reka kciuk)) (IF True reka
+         reka))) (IF (> P7 14) (IF False piesc l2)
+         (IF True l3 l4))) (IF (< P0 0) (IF (AND False
+         True) (IF False l3 kciuk) (IF False kciuk
+         l3)) (IF (> P9 0) (IF False l5 l2) l4)))
+         (IF (AND False True) (IF False l5 piesc)
+             (IF True l5 l5))) (IF (NOT (< P6 161)) (IF
+         (NOT True) (IF True piesc l4) (IF False l4
+         piesc)) (IF (AND False True) (IF False l5
+         l5) (IF False l2 reka)))))) kciuk) (IF (OR
+     False True) (IF True piesc l4) (IF True reka
+     kciuk))) (IF (> P1 0) (IF (> P3 0) (IF False
+     l5 l5) (IF False l3 l4)) (IF (> P9 0) (IF
+     False reka piesc) (IF False kciuk l2)))))
+
+Generation: 13
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2228 Adjusted=0.0004486317 Hits=0
+Tree 0:
+ (IF (OR (OR (NOT True) False) (< P6 9)) (IF
+     (< P0 7) (IF (OR (OR True True) (AND True
+     True)) (IF (< P9 88) (IF False reka kciuk)
+     (IF False kciuk l4)) (IF (< P3 0) (IF True
+     l1 l3) (IF True piesc reka))) (IF (OR (OR
+     False True) (< P3 47)) (IF (> P3 52) (IF
+     False l4 reka) (IF True piesc piesc)) (IF
+     (> P7 0) (IF False l1 l3) (IF False l4 l3))))
+     (IF (> P3 14) (IF (< P9 26) (IF (OR False
+         True) (IF (> P7 11) (IF (> P4 2) reka l2)
+         (IF (OR (AND (OR True True) (NOT (> P8 7)))
+             (> P10 11)) l3 l4)) (IF True l2 reka)) (IF
+         (> P2 49) (IF (OR (> P6 159) (< P0 13)) (IF
+         (< P10 2) (IF False l4 l5) (IF False reka
+         l4)) (IF True l1 piesc)) (IF True l4 l5)))
+         (IF (AND True False) (IF False l2 l1) (IF
+             (< P4 15) (IF (< P5 58) (IF True l2 kciuk)
+             (IF False reka reka)) (IF (< P3 41) (IF False
+             l2 l3) (IF True l1 piesc))))))
+
+Generation: 14
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2104 Adjusted=0.0004750594 Hits=0
+Tree 0:
+ (IF (OR (OR (NOT True) False) (< P6 9)) (IF
+     (< P0 5) (IF False l1 kciuk) (IF (< P0 13)
+     (IF (> P0 4) (IF False l5 reka) (IF False
+         piesc piesc)) (IF (NOT True) (IF False l4
+     l5) (IF False l2 piesc)))) (IF (> P3 14)
+     (IF (< P9 26) (IF (OR False True) (IF (>
+         P7 11) (IF (> P4 2) reka l2) (IF (OR (AND
+         (OR True True) (NOT (> P8 7))) (> P10 11))
+         l3 l4)) (IF True l2 reka)) (IF (> P2 49)
+         (IF (OR (> P6 159) (< P0 13)) (IF (< P10
+             2) (IF False l4 l5) (IF False reka l4)) (IF
+             (NOT False) (IF False piesc l2) (IF True
+             l4 l5))) (IF True l4 l5))) (IF (AND True
+     False) (IF False l2 l1) (IF (< P4 15) (IF
+     (< P5 58) (IF True l2 kciuk) (IF False reka
+     reka)) (IF (< P3 41) (IF False l2 l3) (IF
+     True l1 piesc))))))
+
+Generation: 15
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2040 Adjusted=0.0004899559 Hits=0
+Tree 0:
+ (IF (OR (OR (NOT True) False) (< P6 9)) (IF
+     (< P0 5) (IF False l1 kciuk) (IF (< P0 13)
+     (IF (> P0 4) (IF False l5 reka) (IF False
+         piesc piesc)) (IF (NOT True) (IF False l4
+     l5) (IF False l2 piesc)))) (IF (> P3 14)
+     (IF (< P9 26) (IF (OR False True) (IF (>
+         P7 11) (IF (> P4 2) reka l2) (IF (OR (AND
+         (OR True True) (NOT (> P8 7))) (> P10 11))
+         l3 l4)) (IF True l2 reka)) (IF (> P2 49)
+         (IF (OR (> P6 159) (< P0 13)) (IF (< P10
+             2) (IF False l4 l5) (IF False reka l4)) (IF
+             (NOT False) (IF False piesc l2) (IF True
+             l4 l5))) (IF True l4 l5))) (IF True l3 piesc)))
+
+Generation: 16
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2040 Adjusted=0.0004899559 Hits=0
+Tree 0:
+ (IF (OR (OR (NOT True) False) (< P6 9)) (IF
+     (< P0 5) (IF False l1 kciuk) (IF (< P0 13)
+     (IF (> P0 4) (IF False l5 reka) (IF False
+         piesc piesc)) (IF (NOT True) (IF False l4
+     l5) (IF False l2 piesc)))) (IF (> P3 14)
+     (IF (< P9 26) (IF (OR False True) (IF (>
+         P7 11) (IF (> P4 2) reka l2) (IF (OR (AND
+         (OR True True) (NOT (> P8 7))) (> P10 11))
+         l3 l4)) (IF True l2 reka)) (IF (> P2 49)
+         (IF (OR (> P6 159) (< P0 13)) (IF (< P10
+             2) (IF False l4 l5) (IF False reka l4)) (IF
+             (NOT False) (IF False piesc l2) (IF True
+             l4 l5))) (IF True l4 l5))) (IF True l3 piesc)))
+
+Generation: 17
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=2036 Adjusted=0.000490918 Hits=0
+Tree 0:
+ (IF (OR (OR (NOT True) False) (< P6 9)) (IF
+     (< P0 5) (IF False l1 kciuk) (IF (< P0 13)
+     (IF (> P0 4) (IF False l5 reka) (IF False
+         piesc piesc)) (IF (NOT True) (IF False l4
+     l5) (IF False l2 piesc)))) (IF (> P3 14)
+     (IF (< P9 26) (IF (OR False True) (IF (>
+         P7 11) (IF (> P4 2) reka l2) (IF (OR (AND
+         (OR True True) (NOT True)) (> P10 11)) l3
+         l4)) (IF True l2 reka)) (IF (> P2 49) (IF
+         (OR (> P6 159) (< P0 13)) (IF (< P10 2) (IF
+         False l4 l5) (IF False reka l4)) (IF (NOT
+         False) (IF False piesc l2) (IF True l4 l5)))
+         (IF True l4 l5))) (IF True l3 piesc)))
+
+Generation: 18
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=1444 Adjusted=0.0006920415 Hits=0
+Tree 0:
+ (IF (OR (OR (NOT True) False) (< P6 9)) (IF
+     (< P0 7) (IF (< P3 47) (IF (< P9 88) (IF
+     False reka kciuk) (IF False kciuk l4)) (IF
+     (< P3 56) (IF True l1 l3) (IF True piesc
+     reka))) (IF (OR (OR False True) (< P3 47))
+     (IF (> P3 52) (IF False l4 reka) (IF True
+         piesc piesc)) (IF (> P7 0) (IF False l1 l3)
+     (IF False l4 l3)))) (IF (> P3 14) (IF (<
+     P9 26) (IF (OR False True) (IF (> P7 11)
+     (IF (> P4 2) reka l2) (IF (OR (AND (OR True
+     True) (NOT (> P8 7))) (> P10 11)) l3 l4))
+     (IF True l2 reka)) (IF (> P2 49) (IF (OR
+     (> P6 159) (< P0 13)) (IF (< P10 2) (IF False
+     l4 l5) (IF False reka l4)) (IF True l1 piesc))
+     (IF True l4 l5))) (IF (AND True False) (IF
+     False l2 l1) (IF (< P4 15) (IF (< P5 58)
+     (IF True l2 kciuk) (IF False reka reka))
+     (IF (< P3 41) (IF False l2 l3) (IF True l1
+         piesc))))))
+
+Generation: 19
+Best Individual:
+Subpopulation 0:
+Evaluated: true
+Fitness: Standardized=844 Adjusted=0.001183432 Hits=0
+Tree 0:
+ (IF (OR (OR (NOT True) False) (< P6 9)) (IF
+     (< P0 7) (IF (< P3 41) (IF (< P9 88) (IF
+     False reka kciuk) (IF False kciuk l4)) (IF
+     (< P3 56) (IF True l1 l3) (IF True piesc
+     reka))) (IF (OR True True) (IF (> P3 52)
+     (IF False l4 reka) (IF True piesc piesc))
+     (IF (> P7 0) (IF False l1 l3) (IF False l4
+         l3)))) (IF (> P3 14) (IF (< P9 26) (IF (OR
+     False True) (IF (> P7 11) (IF (> P4 2) reka
+     l2) (IF (OR (AND (OR True True) (NOT (> P8
+     7))) (> P10 11)) l3 l4)) (IF True l2 reka))
+     (IF (> P2 49) (IF (OR (> P6 159) (< P0 13))
+         (IF (< P10 2) (IF False l4 l5) (IF False
+             reka l4)) (IF True l1 piesc)) (IF True l4
+         l5))) (IF (AND True False) (IF False l2 l1)
+     (IF (< P4 15) (IF (< P5 58) (IF True l2 kciuk)
+         (IF False reka reka)) (IF (< P3 41) (IF False
+         l2 l3) (IF True l1 piesc))))))
+
+Best Individual of Run:
+Evaluated: true
+Fitness: Standardized=844 Adjusted=0.001183432 Hits=0
+Tree 0:
+ (IF (OR (OR (NOT True) False) (< P6 9)) (IF
+     (< P0 7) (IF (< P3 41) (IF (< P9 88) (IF
+     False reka kciuk) (IF False kciuk l4)) (IF
+     (< P3 56) (IF True l1 l3) (IF True piesc
+     reka))) (IF (OR True True) (IF (> P3 52)
+     (IF False l4 reka) (IF True piesc piesc))
+     (IF (> P7 0) (IF False l1 l3) (IF False l4
+         l3)))) (IF (> P3 14) (IF (< P9 26) (IF (OR
+     False True) (IF (> P7 11) (IF (> P4 2) reka
+     l2) (IF (OR (AND (OR True True) (NOT (> P8
+     7))) (> P10 11)) l3 l4)) (IF True l2 reka))
+     (IF (> P2 49) (IF (OR (> P6 159) (< P0 13))
+         (IF (< P10 2) (IF False l4 l5) (IF False
+             reka l4)) (IF True l1 piesc)) (IF True l4
+         l5))) (IF (AND True False) (IF False l2 l1)
+     (IF (< P4 15) (IF (< P5 58) (IF True l2 kciuk)
+         (IF False reka reka)) (IF (< P3 41) (IF False
+         l2 l3) (IF True l1 piesc))))))

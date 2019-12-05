@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "GPClassification": {
+      "commandName": "Project",
+      "workingDirectory": "C:\\Users\\Guth\\source\\repos\\GPClassification\\GPClassification"
+    }
+  }
+}
