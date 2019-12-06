@@ -56,28 +56,61 @@ namespace GPClassification
             // StartGP();
             // StartSCProblem();
             //CheckTreeFromFile();
+            
+             
             while (true)
             {
                 Console.Clear();
                 Console.WriteLine("Ktory model klasyfikatora chcesz utworzyc?");
                 Console.WriteLine("1. Single Classificator");
                 Console.WriteLine("2. Multi Classificator");
+                Console.WriteLine("3. Sprawdz klasyfikator jako kod");
                 var key = Console.ReadKey();
-                while (key.KeyChar != '1' && key.KeyChar != '2')
+                while (key.KeyChar != '1' && key.KeyChar != '2' && key.KeyChar != '3')
                     key = Console.ReadKey();
                 if (key.KeyChar == '1')
                     StartGP();
                 if (key.KeyChar == '2')
                     StartSCProblem();
+                if (key.KeyChar == '3')
+                    CheckCodeClassifier();
 
                 Console.WriteLine("Done!");
                 Console.ReadKey();
             }
             
-            Console.WriteLine("\nDone!");
-            Console.ReadLine();
+            
+          //  Console.WriteLine(p);
+            //  TestCode();
+           // Console.WriteLine("\nDone!");
+           // Console.ReadLine();
 
 
+        }
+
+        private static void CheckCodeClassifier()
+        {
+            var dataSet = new DataLoader(@"Datasets\gesty_pogrupowane.txt", 11, 12664, 1704, 2, '\t');
+            var accuracy = CodeClassifier.CheckClassifier(dataSet);
+            Console.WriteLine();
+            Console.WriteLine(accuracy);
+        }
+
+        private static void TestCode()
+        {
+            ECActivator.AddSourceAssemblies(new[] { Assembly.GetAssembly(typeof(IEvolutionState)), Assembly.GetAssembly(typeof(ClassificationProblem)) });
+            var parameters = Evolve.LoadParameterDatabase(new[] { "-file", @"Params\App\Iris\koza.params" });
+            IEvolutionState state = Evolve.Initialize(parameters, 0);
+            state.Setup(state, new Parameter(new string[] { "a" }));
+            //state.Run(EvolutionState.C_STARTED_FRESH);
+         //   var individual = (GPIndividual)((SimpleStatistics)state.Statistics).BestOfRun[0];
+            var tree = new GPTree();
+            var reader = new System.IO.StreamReader("single_cl_ecj_graph.txt");
+            tree.ReadTree(state, reader);
+            var writer = new System.IO.StreamWriter("testcode.txt");
+            var code = TreeReader.PrintCodeFromTree(tree);
+            writer.Write(code);
+            writer.Close();
         }
         private static void StartGP()
         {
@@ -99,6 +132,11 @@ namespace GPClassification
             stats.Add("Poprawność klasyfikacji dla danych uczących: " + accuracy.ToString());
 
             System.IO.File.WriteAllLines(directoryName + "/single_cl_stats.txt", stats.ToArray());
+
+            var writer = new System.IO.StreamWriter(directoryName + "/classifier_code.txt");
+            var code = TreeReader.PrintCodeFromTree(((GPIndividual)best).Trees[0]);
+            writer.Write(code);
+            writer.Close();
 
             int humanGraph = state.Output.AddLog(directoryName + "/single_cl_human_graph.txt");
             int ecjGraph = state.Output.AddLog(directoryName + "/single_cl_ecj_graph.txt");
@@ -122,14 +160,15 @@ namespace GPClassification
             ECActivator.AddSourceAssemblies(new[] { Assembly.GetAssembly(typeof(IEvolutionState)), Assembly.GetAssembly(typeof(ClassificationProblem)) });
             var parameters = Evolve.LoadParameterDatabase(new[] { "-file", @"Params\App\Iris\koza.params" });
             IEvolutionState state = Evolve.Initialize(parameters, 0);
-           // state.Setup(state, new Parameter(new string[] {"a" } ));
-            state.Run(EvolutionState.C_STARTED_FRESH);
+            state.Setup(state, new Parameter(new string[] {"a" } ));
+            //state.Run(EvolutionState.C_STARTED_FRESH);
             var individual = (GPIndividual)((SimpleStatistics)state.Statistics).BestOfRun[0];
             var tree = new GPTree();
             var reader = new System.IO.StreamReader("single_cl_ecj_graph.txt");
             tree.ReadTree(state, reader);
           //  individual.Setup(state, new Parameter(new string[] { "numtrees = 1", "1" }));
             individual.Trees[0] = tree;
+        
             
             
 

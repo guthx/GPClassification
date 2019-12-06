@@ -324,7 +324,7 @@ eval.problem = ec.app.GPClassification.ClassificationProblem
 eval.problem.data = ec.app.GPClassification.ClassificationData
 
 jobs = 1
-generations = 20
+generations = 100
 
 evalthreads = 1
 breedthreads = 1

@@ -21,6 +21,11 @@ namespace GPClassification.Nodes
         {
             return label;
         }
+        public override string ToString()
+        {
+            return "ERC(label)";
+        }
+      //  public override string Name => "ERC(label)";
         public override string Encode()
         {
             return Code.Encode(labelIndex);

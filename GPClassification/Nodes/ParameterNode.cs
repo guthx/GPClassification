@@ -22,6 +22,12 @@ namespace GPClassification.Nodes
             stringBuilder.Append(paramIndex.ToString());
             return stringBuilder.ToString();
         }
+
+        public override string ToString()
+        {
+            return "ERC(param)";
+        }
+
         public override string Encode()
         {
             return Code.Encode(paramIndex);

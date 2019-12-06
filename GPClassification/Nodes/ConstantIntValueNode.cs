@@ -21,6 +21,10 @@ namespace GPClassification.Nodes
         {
             return printedValue.ToString();
         }
+        public override string ToString()
+        {
+            return "ERC(double)";
+        }
         public override string Encode()
         {
             return Code.Encode(value);

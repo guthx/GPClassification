@@ -1,0 +1,61 @@
+if(P6<9){
+if(P0<5){
+if(P3<41){
+return kciuk;
+}
+else
+{
+return l1;
+}
+}
+else
+{
+if(P0<13){
+return reka;
+}
+else
+{
+return piesc;
+}
+}
+}
+else
+{
+if(P9<26){
+if(P2>49){
+if(P7>11){
+if(P4>2){
+return reka;
+}
+else
+{
+return l2;
+}
+}
+else
+{
+return l3;
+}
+}
+else
+{
+return kciuk;
+}
+}
+else
+{
+if(P2>49){
+if(P10<2){
+return l5;
+}
+else
+{
+return l4;
+}
+}
+else
+{
+return l4;
+}
+}
+}
