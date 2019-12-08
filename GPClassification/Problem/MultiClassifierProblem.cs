@@ -11,7 +11,7 @@ using System.Text;
 namespace GPClassification.Problem
 {
     [ECConfiguration("ec.app.GPClassification.SingleClassifierProblem")]
-    public class SingleClassifierProblem : GPProblem, ISimpleProblem
+    public class MultiClassifierProblem : GPProblem, ISimpleProblem
     {
         public ClassificationData Input;
         public DataLoader Dataset;
@@ -24,7 +24,7 @@ namespace GPClassification.Problem
         {
             Dataset = new DataLoader(@"Datasets\gesty_pogrupowane.txt", 11, 1552, 1, 2, '\t');
             CurrentParam = new double[Dataset.AttributeCount];
-            Label = SingleClassificationClass.Current;
+            Label = MultiClassificationClass.Current;
             base.Setup(state, paramBase);
             Input = (ClassificationData)state.Parameters.GetInstanceForParameterEq(
                 paramBase.Push(P_DATA), null, typeof(ClassificationData));
@@ -36,7 +36,7 @@ namespace GPClassification.Problem
             // don't bother copying the inputs and outputs; they're read-only :-)
             // don't bother copying the currentValue; it's transitory
             // but we need to copy our regression data
-            var myobj = (SingleClassifierProblem)(base.Clone());
+            var myobj = (MultiClassifierProblem)(base.Clone());
 
             myobj.Input = (ClassificationData)(Input.Clone());
             return myobj;
@@ -73,13 +73,15 @@ namespace GPClassification.Problem
                     }
 
                 }
-                /*
+                
                 double sens = (double)TP / (TP + FN);
                 double spec = (double)TN / (TN + FP);
 
-                var fitness = 1 - (spec * sens);
-                */
-                var fitness = 8 * FP + 8 * FN + 2 * ind.Size;
+                var acc = 1 - (spec * sens);
+
+                var penalty = ind.Size > 20 ? ind.Size - 20 : 0;
+
+                var fitness = acc * 100 + penalty;
                 var f = ((KozaFitness)ind.Fitness);
                 f.SetStandardizedFitness(state, (float)fitness);
                 f.Hits = hits;

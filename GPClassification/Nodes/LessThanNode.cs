@@ -17,7 +17,7 @@ namespace GPClassification.Nodes
             var value1 = data.doubleVal;
             Children[1].Eval(state, thread, input, stack, individual, problem);
             var value2 = data.doubleVal;
-            if (value1 <= value2)
+            if (value1 < value2)
             {
                 data.boolVal = true;
             }

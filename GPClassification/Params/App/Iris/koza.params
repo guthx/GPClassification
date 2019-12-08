@@ -60,11 +60,11 @@ pop.subpop.0.species.pipe.generate-max = false
 
 pop.subpop.0.species.pipe.num-sources = 3
 pop.subpop.0.species.pipe.source.0 = ec.gp.koza.CrossoverPipeline
-pop.subpop.0.species.pipe.source.0.prob = 0.88
+pop.subpop.0.species.pipe.source.0.prob = 0.82
 pop.subpop.0.species.pipe.source.1 = ec.breed.ReproductionPipeline
 pop.subpop.0.species.pipe.source.1.prob = 0.1
 pop.subpop.0.species.pipe.source.2 = ec.gp.koza.MutationPipeline
-pop.subpop.0.species.pipe.source.2.prob = 0.02
+pop.subpop.0.species.pipe.source.2.prob = 0.08
 
 
 
@@ -328,7 +328,7 @@ generations = 100
 
 evalthreads = 1
 breedthreads = 1
-seed.0 = 1698118691
+seed.0 = 203457869
 seed.1 = 1613902553
 seed.2 = 433600177
 seed.3 = 1698118691
@@ -338,4 +338,4 @@ pop.subpop.0.size = 20000
 
 #433600177
 #1477271183
-
+#1698118691

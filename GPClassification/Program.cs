@@ -21,42 +21,7 @@ namespace GPClassification
         public enum ClassifierType { SINGLE_CLASSIFIER, MULTI_CLASSIFIER };
         static void Main()
         {
-            CultureInfo.DefaultThreadCurrentCulture = CultureInfo.InvariantCulture;
-            /* var threads = new Thread[3];
-             for(var i=0; i<3; i++)
-             {
-                 threads[i] = new Thread(new ThreadStart(StartGP));
-                 threads[i].
-                 threads[i].Start();
-             }*/
-            /*
-            CultureInfo.DefaultThreadCurrentCulture = CultureInfo.InvariantCulture;
-            var test = new DataLoader(@"Datasets\gesty_pogrupowane.txt", 11, 1491, 1, 2, '\t');
-          
-            ECActivator.AddSourceAssemblies(new[] { Assembly.GetAssembly(typeof(IEvolutionState)), Assembly.GetAssembly(typeof(ClassificationProblem)) });
-            IEvolutionState state = Evolve.Initialize(Evolve.LoadParameterDatabase(new[] { "-file", @"Params\App\Iris\koza.params" }), 2);
-            state.Run(EvolutionState.C_STARTED_FRESH);
-            var best = ((SimpleStatistics)((SimpleEvolutionState)state).Statistics).BestOfRun;
-            var data = new ClassificationData();
-            state.Output.AddLog(@"F:\Logs\test.gv");
-            ((GPIndividual)best[0]).Trees[0].PrintStyle = GPTree.PRINT_STYLE_DOT;
-            ((GPIndividual)best[0]).Trees[0].PrintTreeForHumans(state, state.Output.NumLogs - 1);
-            Process graphViz = new Process();
-            graphViz.StartInfo.FileName = @"F:\Instalki\graphviz-2.38\release\bin\dot.exe";
-            graphViz.StartInfo.Arguments = @"-Tps F:\Logs\test.gv -o F:\Logs\test.ps";
-            graphViz.Start();
-            graphViz.WaitForExit();
-            Process ghostscript = new Process();
-            ghostscript.StartInfo.FileName = @"F:\Program Files\gs\gs9.50\bin\gswin64.exe";
-            ghostscript.StartInfo.Arguments = @"-dNOPAUSE -g1920x1080 F:\Logs\test.ps";
-          //  ghostscript.Start();
-          //  ghostscript.WaitForExit();
-          */
-            //StartSCProblem();
-            // StartGP();
-            // StartSCProblem();
-            //CheckTreeFromFile();
-            
+            CultureInfo.DefaultThreadCurrentCulture = CultureInfo.InvariantCulture;      
              
             while (true)
             {
@@ -90,10 +55,13 @@ namespace GPClassification
 
         private static void CheckCodeClassifier()
         {
-            var dataSet = new DataLoader(@"Datasets\gesty_pogrupowane.txt", 11, 12664, 1704, 2, '\t');
-            var accuracy = CodeClassifier.CheckClassifier(dataSet);
+            var dataSetLearn = new DataLoader(@"Datasets\gesty_pogrupowane.txt", 11, 1552, 1, 2, '\t');
+            var dataSetTest = new DataLoader(@"Datasets\gesty_pogrupowane.txt", 11, 12664, 1704, 2, '\t');
+            var accuracyLearn = CodeClassifier.CheckClassifier(dataSetLearn);
+            var accuracyTest = CodeClassifier.CheckClassifier(dataSetTest);
             Console.WriteLine();
-            Console.WriteLine(accuracy);
+            Console.WriteLine(accuracyLearn);
+            Console.WriteLine(accuracyTest);
         }
 
         private static void TestCode()
@@ -179,7 +147,7 @@ namespace GPClassification
         {
             var bestClassifiers = new Individual[8];
             CultureInfo.DefaultThreadCurrentCulture = CultureInfo.InvariantCulture;
-            ECActivator.AddSourceAssemblies(new[] { Assembly.GetAssembly(typeof(IEvolutionState)), Assembly.GetAssembly(typeof(SingleClassifierProblem)) });
+            ECActivator.AddSourceAssemblies(new[] { Assembly.GetAssembly(typeof(IEvolutionState)), Assembly.GetAssembly(typeof(MultiClassifierProblem)) });
             var parameters = Evolve.LoadParameterDatabase(new[] { "-file", @"Params\App\Iris\single.params"});
             IEvolutionState state = Evolve.Initialize(parameters, 0);
             var date = DateTime.Now.Ticks.ToString();
@@ -193,13 +161,13 @@ namespace GPClassification
                // parameters = Evolve.LoadParameterDatabase(new[] { "-file", @"Params\App\Iris\single.params", "-stat.file", @"out1.stat" });
                 if (i != 0)
                 state = Evolve.Initialize(parameters, 0);
-                SingleClassificationClass.Current = SingleClassificationClass.Labels[i];
+                MultiClassificationClass.Current = MultiClassificationClass.Labels[i];
                 // state.Output.FilePrefix = i.ToString();
                 state.Run(EvolutionState.C_STARTED_FRESH);
                 var best = ((SimpleStatistics)((SimpleEvolutionState)state).Statistics).BestOfRun[0];
 
-                int humanGraph = state.Output.AddLog(directoryName + "/multi_cl_human_graph_" + i.ToString() + ".txt" );
-                int ecjGraph = state.Output.AddLog(directoryName + "/multi_cl_ecj_graph_" + i.ToString() + ".txt");
+                int humanGraph = state.Output.AddLog(directoryName + "/multi_cl_human_graph_" + MultiClassificationClass.Current + ".txt" );
+                int ecjGraph = state.Output.AddLog(directoryName + "/multi_cl_ecj_graph_" + MultiClassificationClass.Current + ".txt");
                 ((GPIndividual)best).Trees[0].PrintStyle = GPTree.PRINT_STYLE_DOT;
                 ((GPIndividual)best).Trees[0].PrintTreeForHumans(state, humanGraph);
                 ((GPIndividual)best).Trees[0].PrintTree(state, ecjGraph);
@@ -208,8 +176,13 @@ namespace GPClassification
                 // System.IO.File.Delete("out.stat");
                 bestClassifiers[i] = best;
 
+                var writer2 = new System.IO.StreamWriter(directoryName + "/classifier_code_" + MultiClassificationClass.Current + ".txt");
+                var code = TreeReader.PrintCodeFromTree(((GPIndividual)best).Trees[0]);
+                writer2.Write(code);
+                writer2.Close();
+
                 var accuracy = (double)(1552 - ((KozaFitness)bestClassifiers[i].Fitness).StandardizedFitness) / 1552;
-                writer.WriteLine("Klasyfikator dla gestu " + SingleClassificationClass.Labels[i]);
+                writer.WriteLine("Klasyfikator dla gestu " + MultiClassificationClass.Labels[i]);
                 writer.WriteLine("Ilość generacji: " + state.NumGenerations.ToString());
                 writer.WriteLine("Rozmiar drzewa: " + ((GPIndividual)bestClassifiers[i]).Size.ToString());
                 writer.WriteLine("Poprawność klasyfikacji: " + accuracy.ToString());
@@ -236,16 +209,16 @@ namespace GPClassification
                     var labeledClassifier = new LabeledClassifier
                     {
                         Classifier = (GPIndividual)classifiers[i],
-                        Label = SingleClassificationClass.Labels[i]
+                        Label = MultiClassificationClass.Labels[i]
                     };
                     labeledClassifiers[i] = labeledClassifier;
                 }
 
                 labeledClassifiers = labeledClassifiers.OrderByDescending(c => ((KozaFitness)c.Classifier.Fitness).AdjustedFitness).ToArray();
 
-                var input = ((SingleClassifierProblem)state.Evaluator.p_problem).Input;
-                var stack = ((SingleClassifierProblem)state.Evaluator.p_problem).Stack;
-                var problem = (SingleClassifierProblem)state.Evaluator.p_problem;
+                var input = ((MultiClassifierProblem)state.Evaluator.p_problem).Input;
+                var stack = ((MultiClassifierProblem)state.Evaluator.p_problem).Stack;
+                var problem = (MultiClassifierProblem)state.Evaluator.p_problem;
 
                 
 

@@ -16,9 +16,10 @@ namespace GPClassification.Nodes
     {
         public double value;
         public int index;
+        public double printedValue;
         public override string ToStringForHumans()
         {
-            return value.ToString();
+            return printedValue.ToString();
         }
         public override string Encode()
         {
@@ -42,12 +43,12 @@ namespace GPClassification.Nodes
         public override void Eval(IEvolutionState state, int thread, GPData input, ADFStack stack, GPIndividual individual, IProblem problem)
         {
             index = ((ClassificationData)input).index;
-            var minVal = ((SingleClassifierProblem)problem).Dataset.MinValues[index];
-            var maxVal = ((SingleClassifierProblem)problem).Dataset.MaxValues[index];
-            var val = Math.Round(minVal + (maxVal - minVal) * value);
+            var minVal = ((MultiClassifierProblem)problem).Dataset.MinValues[index];
+            var maxVal = ((MultiClassifierProblem)problem).Dataset.MaxValues[index];
+            printedValue = Math.Round(minVal + (maxVal - minVal) * value);
             //if (val == maxVal)
             //    val = -1;
-            ((ClassificationData)input).doubleVal = val;
+            ((ClassificationData)input).doubleVal = printedValue;
 
         }
 

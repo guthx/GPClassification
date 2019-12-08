@@ -43,7 +43,7 @@ namespace GPClassification.Nodes
 
         public override void Eval(IEvolutionState state, int thread, GPData input, ADFStack stack, GPIndividual individual, IProblem problem)
         {
-            var cProblem = (SingleClassifierProblem)problem;
+            var cProblem = (MultiClassifierProblem)problem;
             ((ClassificationData)input).doubleVal = cProblem.CurrentParam[paramIndex];
             ((ClassificationData)input).index = (int)paramIndex;
         }
@@ -56,7 +56,7 @@ namespace GPClassification.Nodes
 
         public override void ResetNode(IEvolutionState state, int thread)
         {
-            var problem = (SingleClassifierProblem)state.Evaluator.p_problem;
+            var problem = (MultiClassifierProblem)state.Evaluator.p_problem;
             var attributeCount = problem.Dataset.AttributeCount;
             paramIndex = state.Random[thread].NextInt(attributeCount);
         }

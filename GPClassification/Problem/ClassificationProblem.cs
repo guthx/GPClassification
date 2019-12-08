@@ -73,8 +73,9 @@ namespace GPClassification.Problem
                 {
                     hits++;
                 }
+                var penalty = ind.Size > 50 ? (ind.Size - 50)*2 : 0;
                 failedClassify *= 8;
-                failedClassify += (int)ind.Size*2;
+                failedClassify += (int)penalty;
                 // the fitness better be KozaFitness!
                 var f = ((KozaFitness)ind.Fitness);
                 f.SetStandardizedFitness(state, (float)failedClassify);
